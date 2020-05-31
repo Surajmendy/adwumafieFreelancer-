@@ -1,5 +1,5 @@
 # adwumafieFreelancer-
 Freelancer
 Sprint 1 <br/>
-Registration and User profile
+Registration and User profile <br/>
 Email verification
