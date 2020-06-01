@@ -47,6 +47,7 @@ if(!isset($_SESSION['email'])){
 
     <link rel="stylesheet" type="text/css" media="all" href="../../vendors/fonts/athena/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../vendors/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../vendors/css/style2.css" />
 
 </head>
 
@@ -61,10 +62,10 @@ if(!isset($_SESSION['email'])){
         <nav class="ps-navigation--dashboard">
             <ul>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Projects</a></li>
-                <li class="active"><a href="#">Inbox</a></li>
+                <!--li><a href="#">Projects</a></li-->
+                <!--li class="active"><a href="#">Inbox</a></li-->
 
-                <li><a href="#">Feedback</a></li>
+                <!--li><a href="#">Feedback</a></li-->
                 <li><a href="#">Profile</a></li>
 
 

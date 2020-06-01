@@ -37,12 +37,12 @@ if(isset($_POST['register_user'])){
             $host = $_SERVER['SERVER_NAME'];
 
 
-            $headers = "From: noreply@".$host."\r\n";
+            $headers = "From: Adwumafie@".$host."\r\n";
             $headers .= "Content-type: text/html\r\n";
 
             $at = "@";
 
-            $email_title = "Account Verification";
+            $email_title = "Account Verification on Adwumafie";
             //$email_title_customer = "Email Verification";
             $body_email =  '
             
@@ -58,7 +58,7 @@ if(isset($_POST['register_user'])){
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center pdb-2-5x">
-                                                        <a href="#"><img class="email-logo" src="" alt="logo"></a>
+                                                        <a href="#"><img class="email-logo" src="https://adwumafie.knowghnews.com/vendors/img/logo.png" alt="logo"></a>
                                                       
                                                     </td>
                                                 </tr>

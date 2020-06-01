@@ -2,6 +2,9 @@
 require_once '../../../config/dbconfig.php';
 require_once  '../../../functions/functions.php';
 //check if current user has session
+$user_id = $_SESSION['id'];
+$user_email = $_SESSION['email'];
+$username = $_SESSION['first_name'];
 if(!isset($_SESSION['email'])){
     echo "<script>window.location='../../login/'</script>";
 }else{
@@ -39,6 +42,7 @@ if(!isset($_SESSION['email'])){
 
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/fonts/athena/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style2.css" />
 
 </head>
 
@@ -50,18 +54,9 @@ if(!isset($_SESSION['email'])){
 
 
     <div class="ps-page" id="dashboard">
-        <nav class="ps-navigation--dashboard">
-            <ul>
-                <li class="active"><a href="#">Dashboard</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Inbox</a></li>
 
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="find_freelancers.php">Find Freelancers</a></li>
+        <?php  include 'includes/sub_nav.php'; ?>
 
-            </ul>
-        </nav>
         <div class="ps-dashboard ps-section--sidebar">
             <div class="container">
                 <div class="ps-section__container">

@@ -2,8 +2,11 @@
 require_once '../../../config/dbconfig.php';
 require_once  '../../../functions/functions.php';
 //check if current user has session
+$user_id = $_SESSION['id'];
+$user_email = $_SESSION['email'];
+$username = $_SESSION['first_name'];
 if(!isset($_SESSION['email'])){
-    redirect_to('../login');
+    echo "<script>window.location='../../../login/'</script>";
 }else{
     //check if email is verified
 
@@ -39,6 +42,7 @@ if(!isset($_SESSION['email'])){
 
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/fonts/athena/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style2.css" />
 
 </head>
 
@@ -50,18 +54,7 @@ if(!isset($_SESSION['email'])){
 
   
    <div class="ps-page" id="dashboard">
-      <nav class="ps-navigation--dashboard">
-        <ul>
-          <li ><a href="#">Dashboard</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Inbox</a></li>
-
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Profile</a></li>
-            <li class="active" ><a href="find_freelancers.php">Find Freelancers</a></li>
-
-        </ul>
-      </nav>
+       <?php include 'includes/sub_nav.php'?>
       <div class="ps-dashboard ps-section--sidebar">
         <div class="container">
           <div class="ps-section__container">
@@ -70,7 +63,7 @@ if(!isset($_SESSION['email'])){
                 <div class="ps-connection-manage">
                     <h3>Available Freelancers</h3>
                     <h4 class="ps-heading--2">Chat Freelancers</h4>
-                    <div class="row">
+                    <div style=" padding-bottom: 30px;"  class="row" >
 
                         <?php
                         //get available freelancers
@@ -89,15 +82,17 @@ if(!isset($_SESSION['email'])){
 
                                     ?>
 
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12  ">
+
+
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12  " id="listed_user">
                                         <div class="ps-block--people">
-                                            <div class="ps-block__thumbnail"><img src="../../../vendors/img/users/3.jpg"
+                                            <div class="ps-block__thumbnail"><img src="../../../vendors/img/users/user.png"
                                                                                   alt=""></div>
                                             <div class="ps-block__content"><a class="ps-block__title"
                                                                               href="#"><?php echo $name; ?></a>
-                                                <p>Hanoi, Vietnam ยท Worked at @Dell...</p>
-                                                <p><strong>Product Design ( Web, Mobile App) <br/> 7 Years of Experience
-                                                        <br/> 48 Number of hours per week</strong></p>
+                                                <p></p>
+                                                <p><strong> <br/>
+                                                        <br/></strong></p>
                                                 <div class="ps-block__footer">
 
                                                     <a class="ps-btn ps-btn--sm" href="../chat.php?user=<?php echo $client_id ?>">Chat</a>

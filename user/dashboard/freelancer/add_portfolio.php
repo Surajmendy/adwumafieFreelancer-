@@ -45,7 +45,7 @@ if(!isset($_SESSION['email'])){
 
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/fonts/athena/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/dropzone.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style2.css" />
 
 </head>
 
@@ -57,38 +57,33 @@ if(!isset($_SESSION['email'])){
 
   
    <div class="ps-page" id="dashboard">
-      <nav class="ps-navigation--dashboard">
-        <ul>
-          <li class="active"><a href="#">Dashboard</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Inbox</a></li>
+       <?php include 'freelancer_navbar.php'?>
 
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="find_clients.php">Find Clients</a></li>
-
-
-        </ul>
-      </nav>
       <div class="ps-dashboard ps-section--sidebar">
         <div class="container">
           <div class="ps-section__container">
-            <div class="ps-section__content">
+            <div class="ps-section__content" >
 
 
-                <?php
-                   if(isset($_POST['submit'])){
-                       $description = checkValues($_POST['description']);
-                       $title = checkValues( $_POST['title']);
-                       $link = checkValues($_POST['link']);
 
 
-                       // Insert form data in the database
-                       $insert = mysqli_query($con,"INSERT INTO portfolio (title,description,link,user_id) VALUES ('".$title."','".$description."','".$link."','".$user_id."')");
 
-                       if($insert){
-                           echo '                
+                <form class="ps-form--post-a-job"  action="" method="post" >
+                    <h3 align="left">Add Portfolio</h3>
+
+
+                    <?php
+                    if(isset($_POST['submit'])){
+                        $description = checkValues($_POST['description']);
+                        $title = checkValues( $_POST['title']);
+                        $link = checkValues($_POST['link']);
+
+
+                        // Insert form data in the database
+                        $insert = mysqli_query($con,"INSERT INTO portfolio (title,description,link,user_id) VALUES ('".$title."','".$description."','".$link."','".$user_id."')");
+
+                        if($insert){
+                            echo '                
  <div class="alert alert-success alert-dismissible fade show" role="alert">
     <strong>Portfolio was added Successfully</strong>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -96,34 +91,29 @@ if(!isset($_SESSION['email'])){
     </button>
     </div>    
 ';
-                       }
-                   }
+                        }
+                    }
 
-                ?>
-
-
-                <form class="ps-form--post-a-job"  action="" method="post" >
-                    <h3>Add Portfolio</h3>
-
+                    ?>
 
                     <div class="form-group">
-                        <label>Title</label>
+                        <p class="text-left">Title</p>
                         <input class="form-control" type="text" name="title" id="title" placeholder="e.g Ecommerce Website"/>
                     </div>
                     <div class="form-group">
-                        <label>Description</label>
+                        <p align="left">Description</p>
                         <textarea class="form-control" rows="6" name="description" id="description" placeholder="Enter portfolio description here"></textarea>
                     </div>
 
                     <div class="form-group">
-                        <label>Link</label>
-                        <input class="form-control" type="text" name="link" id="link" placeholder="e.g https://github.com/eco"/>
+                        <p align="left">Link</p>
+                        <input class="form-control" type="text" name="link" id="link" placeholder="e.g https://github.com/eco" required/>
                     </div>
 
-                    <!--div class="form-group">
-                        <label>Image</label>
+                    <div class="form-group">
+                        <p align="left">Image</p>
                         <input class="form-control" type="file" name="file"  id="file" />
-                    </div-->
+                    </div>
 
                     <div class="ps-form__submit">
                         <button type="submit" name="submit" class="ps-btn ps-btn--gradient submitBtn" >Add</button>

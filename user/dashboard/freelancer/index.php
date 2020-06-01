@@ -56,20 +56,9 @@ if(!isset($_SESSION['email'])){
 
   
    <div class="ps-page" id="dashboard">
-      <nav class="ps-navigation--dashboard">
-        <ul>
-          <li class="active"><a href="#">Dashboard</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Inbox</a></li>
 
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="find_clients.php">Find Clients</a></li>
+       <?php include 'freelancer_navbar.php'?>
 
-
-        </ul>
-      </nav>
       <div class="ps-dashboard ps-section--sidebar">
         <div class="container">
           <div class="ps-section__container">

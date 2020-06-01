@@ -128,3 +128,27 @@
     color:#4EC862;
 }
 
+.ps-block__footer{
+    padding-bottom: 30px;
+}
+
+.ps-form--post-a-job{
+    max-width: 700px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+
+.ps-form--post-a-job .form-group > p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #02353C;
+    font-size: 22px;
+
+}
