@@ -24,9 +24,13 @@ if(isset($_POST['activate_user'])){
 
                 //redirect user to dashboard
                 if($role == "client"){
-                    redirect_to( "../dashboard/client" );
+                  //  redirect_to( "../dashboard/client" );
+
+                    echo "<script>window.location='../dashboard/client'</script>";
+
                 }elseif ($role == "freelancer"){
-                    redirect_to( "../dashboard/freelancer" );
+                  //  redirect_to( "../dashboard/freelancer" );
+                    echo "<script>window.location='../dashboard/freelancer'</script>";
                 }
 
 

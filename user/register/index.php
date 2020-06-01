@@ -51,7 +51,7 @@ require_once '../../functions/functions.php';
         </div>
         <div class="header__right">
             <ul class="menu">
-                <li class="menu-item-has-children"><a th:href="@{/job/create}">Hire Freelancer</a><span class="sub-toggle"></span>
+                <li class="menu-item-has-children"><a href="#">Hire Freelancer</a><span class="sub-toggle"></span>
 
                 </li>
 

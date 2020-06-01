@@ -4,7 +4,7 @@ require_once '../../../config/dbconfig.php';
 require_once  '../../../functions/functions.php';
 //check if current user has session
 if(!isset($_SESSION['email'])){
-    redirect_to('../login');
+    echo "<script>window.location='../../login/'</script>";
 }else{
     //check if email is verified
 
