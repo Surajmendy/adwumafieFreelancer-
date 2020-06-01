@@ -10,7 +10,7 @@ if(isset($_GET['user'])){
 }
 //check if current user has session
 if(!isset($_SESSION['email'])){
-    redirect_to('../login');
+    echo "<script>window.location='../login/'</script>";
 }else{
     //check if email is verified
 
@@ -128,7 +128,7 @@ if(!isset($_SESSION['email'])){
 
 
 
-                    <?php include '../../template_parts/sidebar.html' ?>
+                    <?php include '../../template_parts/sidebar.php' ?>
 
 
 

@@ -3,6 +3,9 @@ session_start();
 require_once '../../../config/dbconfig.php';
 require_once  '../../../functions/functions.php';
 //check if current user has session
+$user_id = $_SESSION['id'];
+$user_email = $_SESSION['email'];
+$username = $_SESSION['first_name'];
 if(!isset($_SESSION['email'])){
     echo "<script>window.location='../../login/'</script>";
 }else{
@@ -20,7 +23,7 @@ if(!isset($_SESSION['email'])){
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../../img/favicon.png"/>
 
 
     <title> dashboard</title>
@@ -41,6 +44,7 @@ if(!isset($_SESSION['email'])){
 
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/fonts/athena/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../../vendors/css/style2.css" />
 
 </head>
 
@@ -77,7 +81,7 @@ if(!isset($_SESSION['email'])){
 
 
 
-              <?php include '../../../template_parts/sidebar.html' ?>
+              <?php include '../../../template_parts/sidebar.php' ?>
            
             
             

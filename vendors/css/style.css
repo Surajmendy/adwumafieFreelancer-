@@ -1668,7 +1668,7 @@ button {
   transition: all .4s ease;
   color: rgb(255, 255, 255);
   cursor: pointer;
-    text-shadow: rgb(230, 84, 0) 0px 0px 0.3125rem;
+
 }
 
 .ps-btn--rounded, button.ps-btn--rounded {
@@ -1758,28 +1758,21 @@ button {
   width: 100%;
   z-index: -1;
   height: 100%;
-  border-radius: 50px;
+
+  border-radius: 5px;
   -webkit-transition: all .8s ease;
   -o-transition: all .8s ease;
   transition: all .8s ease;
 }
 
 .ps-btn--gradient:before, button.ps-btn--gradient:before {
-  background-color: #0CB905;
-  background-image: -webkit-linear-gradient(left, #097801, #098309, #0CB905);
-  background-image: -webkit-gradient(linear,left top, right top,from(#0CB905), color-stop(#0CB905), to(#814cf9));
-  background-image: -webkit-linear-gradient(left,#097801, #098309, #0CB905);
-  background-image: -o-linear-gradient(left,#097801, #098309, #0CB905);
-  background-image: linear-gradient(to right,#097801, #098309, #0CB905);
+  background-color: #4EC862;
+
 }
 
 .ps-btn--gradient:after, button.ps-btn--gradient:after {
-  background-color: #0CB905;
-  background-image: -webkit-linear-gradient(right, #0CB905, #0CB905, #814cf9);
-  background-image: -webkit-gradient(linear,right top, left top,from(#0CB905), color-stop(#0CB905), to(#814cf9));
-  background-image: -webkit-linear-gradient(right,#0CB905, #0CB905, #814cf9);
-  background-image: -o-linear-gradient(right,#0CB905, #0CB905, #814cf9);
-  background-image: linear-gradient(to left,#0CB905, #0CB905, #814cf9);
+  background-color: #4EC862;
+
   visibility: hidden;
   opacity: 0;
 }
@@ -2019,8 +2012,8 @@ button {
   padding: 0 20px;
   border: none;
   height: 50px;
-  text-indent: 5px;
-  border-radius: 50px;
+  text-indent: 2px;
+  border-radius: 0px;
   color: #000;
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
@@ -8245,6 +8238,7 @@ textarea.form-control {
 .ps-form--signin {
   max-width: 500px;
   margin: 0 auto;
+
 }
 
 .ps-form--signin .ps-form__header {
@@ -8253,7 +8247,7 @@ textarea.form-control {
 }
 
 .ps-form--signin .ps-form__header h3 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   color: #000;
 }
@@ -12601,6 +12595,7 @@ textarea.form-control {
 
 .ps-page--signin {
   padding: 100px 0;
+  background-color: #f1f1f1;
 }
 
 @media (max-width: 767px) {
@@ -12983,7 +12978,7 @@ textarea.form-control {
   display: block;
   padding: 15px 0;
   line-height: 20px;
-  border-bottom: 2px solid #ecf5f6;
+
   color: #7d7d7d;
 }
 

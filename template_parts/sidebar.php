@@ -4,7 +4,7 @@
                   <div class="ps-block__thumbnail"><img src="img/users/1.jpg" alt=""/></div>
                   <div class="ps-block__content">
                     <p><strong>Wellcome back</strong></p>
-                    <h4>John Herrry</h4><a href="#">View your profile<i class="fa fa-caret-right"></i></a>
+                    <h4> <?php echo $username; ?> </h4><a href="#">View your profile<i class="fa fa-caret-right"></i></a>
                   </div>
                 </div>
                 <h5>Setup your account</h5>

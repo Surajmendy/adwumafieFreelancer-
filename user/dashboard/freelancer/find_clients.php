@@ -131,7 +131,7 @@ if(!isset($_SESSION['email'])){
 
 
 
-              <?php include '../../../template_parts/sidebar.html' ?>
+              <?php include '../../../template_parts/sidebar.php' ?>
 
 
 
