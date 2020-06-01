@@ -1,4 +1,5 @@
-<?php  session_start();
+<?php
+session_start();
 require_once '../../../config/dbconfig.php';
 require_once  '../../../functions/functions.php';
 //check if current user has session

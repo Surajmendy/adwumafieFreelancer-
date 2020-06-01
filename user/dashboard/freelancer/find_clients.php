@@ -11,8 +11,6 @@ if(!isset($_SESSION['email'])){
 
 }
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,7 +97,7 @@ if(!isset($_SESSION['email'])){
                                                                                   alt=""></div>
                                             <div class="ps-block__content"><a class="ps-block__title"
                                                                               href="#"><?php echo $name; ?></a>
-                                                <p>Hanoi, Vietnam · Worked at @Dell...</p>
+                                                <p>Hanoi, Vietnam ยท Worked at @Dell...</p>
                                                 <p><strong>Product Design ( Web, Mobile App) <br/> 7 Years of Experience
                                                         <br/> 48 Number of hours per week</strong></p>
                                                 <div class="ps-block__footer">

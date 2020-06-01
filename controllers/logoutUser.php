@@ -5,7 +5,4 @@ session_start();
  $_SESSION['firstname'] = null;
 $_SESSION['lastname'] = null;
 
-echo "<script>window.location='../user/login/';</script>";
-
-
-
+echo "<script>window.location='../user/login/'</script>";

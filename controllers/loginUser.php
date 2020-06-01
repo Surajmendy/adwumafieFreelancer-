@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 
 
@@ -40,9 +40,11 @@ if (isset($_POST['login-user'])) {
 
                     //redirect user to dashboard
                     if($db_role == "client"){
-                        redirect_to( "../dashboard/client" );
+                        echo "<script>window.location='../dashboard/client'</script>";
+                        //redirect_to( "../dashboard/client" );
                     }elseif ($db_role == "freelancer"){
-                        redirect_to( "../dashboard/freelancer" );
+                       // redirect_to( "../dashboard/freelancer" );
+                         echo "<script>window.location='../dashboard/freelancer'</script>";
                     }
 
 

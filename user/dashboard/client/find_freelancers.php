@@ -15,7 +15,7 @@ if(!isset($_SESSION['email'])){
 <html>
 <head>
     <meta charset="utf-8"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="../../img/favicon.png"/>
@@ -95,7 +95,7 @@ if(!isset($_SESSION['email'])){
                                                                                   alt=""></div>
                                             <div class="ps-block__content"><a class="ps-block__title"
                                                                               href="#"><?php echo $name; ?></a>
-                                                <p>Hanoi, Vietnam · Worked at @Dell...</p>
+                                                <p>Hanoi, Vietnam ยท Worked at @Dell...</p>
                                                 <p><strong>Product Design ( Web, Mobile App) <br/> 7 Years of Experience
                                                         <br/> 48 Number of hours per week</strong></p>
                                                 <div class="ps-block__footer">

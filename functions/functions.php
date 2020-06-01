@@ -1,13 +1,21 @@
 <?php
 // This file is the place to store all basic functions
 
-
+/*
 function redirect_to( $location = NULL ) {
     if ($location != NULL) {
         header("Location: {$location}");
         exit;
    }
-}
+}*/
+
+/*
+function redirect_to($url) {
+    ob_start();
+    header('Location: '.$url);
+    ob_end_flush();
+    die();
+}*/
 
 
 
