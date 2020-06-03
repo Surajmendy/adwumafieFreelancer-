@@ -10,7 +10,7 @@ $last_name = $_SESSION['last_name'];
 $role = $_SESSION['role'];
 
 
-$base_url  = 'http://localhost/adwumafieWeb';
+$base_url  = 'https://adwumafie.knowghnews.com';
 if(!isset($_SESSION['email'])){
     echo "<script>window.location='../../login/'</script>";
 }else{

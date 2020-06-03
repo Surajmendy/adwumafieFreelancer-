@@ -47,7 +47,7 @@ function UploadProfilePhoto($file){
 
 
 
-    $supporttedformats = array('.jpg','.jpeg','.png');
+    $supporttedformats = array('.jpg','.jpeg','.png','.JPG','.JPEG','.PNG');
 
     //$filename = $_FILES["file"]["name"];
 
