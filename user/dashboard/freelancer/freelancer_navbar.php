@@ -5,8 +5,8 @@
         <!--li><a href="#">Inbox</a></li-->
 
         <!--li><a href="#">Feedback</a></li-->
-        <li><a href="#">Profile</a></li>
-        <li><a href="add_portfolio.php">Portfolio</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li><a href="portfolio.php">Portfolio</a></li>
         <li><a href="find_clients.php">Find Clients</a></li>
 
 

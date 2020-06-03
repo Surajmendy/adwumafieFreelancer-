@@ -1,8 +1,8 @@
 <?php
 session_start();
 require_once '../../../config/dbconfig.php';
-require_once  '../../../functions/functions.php';
-require_once  '../../../functions/functions.php';
+require_once '../../../functions/functions.php';
+require_once '../../../functions/functions.php';
 //check if current user has session
 
 
@@ -55,70 +55,32 @@ if(!isset($_SESSION['email'])){
 <body>
 
 
-<?php include '../../../template_parts/dash_menu.html' ?>
+<?php include 'includes/dash_menu.html' ?>
 
 
-  
-   <div class="ps-page" id="dashboard">
-       <?php include 'freelancer_navbar.php'?>
 
-      <div class="ps-dashboard ps-section--sidebar">
+<div class="ps-page" id="dashboard">
+    <?php include 'includes/sub_nav.php ' ?>
+
+    <div class="ps-dashboard ps-section--sidebar">
         <div class="container">
-          <div class="ps-section__container">
-            <div class="ps-section__content" >
+            <div class="ps-section__container">
+                <div class="ps-section__content" >
 
 
-           <div>
+                   <?php
+                    $profile_query = mysqli_query($con,"SELECT * FROM profile WHERE user_id = '$user_id'");
+                    if($profile_query){
+                        $num_profile = mysqli_num_rows($profile_query);
+                        if($num_profile > 0){
 
-
-           </div>
-                <?php
-  echo '<div class="ps-form--post-a-job">';
-
-                if(isset($_GET['response']) && isset($_GET['upload'])){
-                    $response = $_GET['response'];
-                    $uploaded = $_GET['upload'];
-
-                    if($response == "success" && $uploaded== "success"){
-                        echo '                
- <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Image was added succesfully to portfolio <a href="portfolio.php">click to view</a></strong>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-     <span aria-hidden="true">&times;</span>
-    </button>
-    </div>    
-';
-                    }else{
-                        echo '                
- <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    <strong> Something went wrong! Please add Image again</strong>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-     <span aria-hidden="true">&times;</span>
-    </button>
-    </div> ';
+                        }
                     }
-                }
-
-                echo '</div>';
-
-                if(isset($_GET['response'])) {
-                    $response = $_GET['response'];
-
-                    if ($response == "success") {
-                        include "forms/drop_image_form.php";
-
-                    } else if ($response == "failed") {
-                        include "../../../alerts/error.php";
-                    }
+                   ?>
 
 
 
-                }else{
-                    include "forms/add_portfolio_form.php";
-                }
-
-
-                ?>
+                </div>
 
 
 
@@ -126,16 +88,9 @@ if(!isset($_SESSION['email'])){
 
 
             </div>
-
-
-
-
-
-            
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
 
 

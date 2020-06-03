@@ -49,7 +49,7 @@ if(!isset($_SESSION['email'])){
 <body>
 
 
-    <?php include '../../../template_parts/dash_menu.html' ?>
+<?php include 'includes/dash_menu.html' ?>
 
 
 

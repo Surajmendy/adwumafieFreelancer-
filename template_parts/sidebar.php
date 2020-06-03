@@ -1,7 +1,7 @@
  <div class="ps-section__sidebar">
               <aside class="widget widget_profile widget_progress">
                 <div class="ps-block--user">
-                  <div class="ps-block__thumbnail"><img src="../vendors/img/users/user.png" alt=""/></div>
+                  <div class="ps-block__thumbnail"><img src="../../../vendors/img/users/user.png" alt=""/></div>
                   <div class="ps-block__content">
                     <p><strong>Wellcome back</strong></p>
                     <h4> <?php echo $username; ?> </h4><a href="#">View your profile<i class="fa fa-caret-right"></i></a>

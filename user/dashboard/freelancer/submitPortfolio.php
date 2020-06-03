@@ -6,7 +6,7 @@ $response = array(
 );
 
 // If form is submitted
-if(isset($_POST['title']) || isset($_POST['description']) || isset($_POST['file']) || isset($_POST['link']) ){
+if(isset($_POST['submitportfolio']) || isset($_POST['description']) || isset($_POST['file']) || isset($_POST['link']) ){
     // Get the submitted form data
     $description = checkValues($_POST['description']);
     $title = checkValues( $_POST['title']);
@@ -14,7 +14,7 @@ if(isset($_POST['title']) || isset($_POST['description']) || isset($_POST['file'
 
     // Check whether submitted data is not empty
     if(!empty($title) && !empty($description)  && !empty($link) ){
-        // Validate email
+
 
             $uploadStatus = 1;
 
@@ -41,6 +41,8 @@ if(isset($_POST['title']) || isset($_POST['description']) || isset($_POST['file'
                     $uploadStatus = 0;
                     $response['message'] = 'Sorry, only JPG, JPEG, & PNG files are allowed to upload.';
                 }
+            }else{
+
             }
 
             if($uploadStatus == 1){
@@ -57,7 +59,7 @@ if(isset($_POST['title']) || isset($_POST['description']) || isset($_POST['file'
             }
 
     }else{
-        $response['message'] = 'Please fill all the mandatory fields (name and email).';
+        $response['message'] = 'Please fill all the mandatory fields .';
     }
 }
 

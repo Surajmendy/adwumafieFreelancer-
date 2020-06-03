@@ -102,7 +102,7 @@ require_once '../../functions/functions.php';
 
     <form class="ps-form--signin" action="" method="post">
         <div class="ps-form__header">
-            <h3>Sign Up for free!</h3>
+            <h3>Sign Up</h3>
 
 
             <?php require_once '../../controllers/registerUser.php'?>
@@ -128,6 +128,7 @@ require_once '../../functions/functions.php';
             <div class="form-group" >
 
                 <select  name="role" class=" ps-select ">
+                    <option value="freelancer">Register as</option>
                     <option value="client">Client</option>
                     <option value="freelancer">Freelancer</option>
 

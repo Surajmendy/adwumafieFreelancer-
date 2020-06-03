@@ -1,13 +1,13 @@
 <footer class="ps-footer">
     <div class="container">
-        <div class="ps-footer__top"><a class="ps-logo" href="/"><img src="../../vendors/img/logo_footer.png" alt=""></a>
+        <!--div class="ps-footer__top"><a class="ps-logo" href="/"><img src="../../vendors/img/logo_footer.png" alt=""></a>
             <div class="ps-footer__numbers">
 
             </div>
-        </div>
+        </div-->
 
 
-        <div class="ps-footer__center">
+        <!--div class="ps-footer__center">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 ">
                     <aside class="widget widget_footer">
@@ -55,7 +55,7 @@
                 </div>
 
             </div>
-        </div>
+        </div-->
 
 
         <div class="ps-footer__bottom">

@@ -4,7 +4,7 @@
 }
 
 #sign-card {
-    max-width: 700px;
+    max-width: 650px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     margin: auto;
@@ -94,7 +94,7 @@
     color:#ffffff;
 }
 .ps-btn{
-    background-color: #F9992B;
+    background-color: #4EC862;
 }
 
 .ps-btn:hover{
@@ -137,11 +137,9 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 50px;
     margin-bottom: 50px;
+
 }
 
 
@@ -151,4 +149,15 @@
     color: #02353C;
     font-size: 22px;
 
+}
+
+.ps-block--service-3 .ps-block__thumbnail img{
+    border-radius: 10%;
+}
+.ps-block--service-3{
+    margin-right: 50px;
+}
+
+.ps-form--settings{
+    max-width: 700px;
 }

@@ -4,6 +4,7 @@ require_once  '../../functions/functions.php';
 
 $user_id = $_SESSION['id'];
 $user_email = $_SESSION['email'];
+$username = $_SESSION['first_name'];
 
 if(isset($_GET['user'])){
     $receiver_id = $_GET['user'];
@@ -48,6 +49,7 @@ if(!isset($_SESSION['email'])){
     <link rel="stylesheet" type="text/css" media="all" href="../../vendors/fonts/athena/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../vendors/css/style.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../../vendors/css/style2.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
 
@@ -61,7 +63,8 @@ if(!isset($_SESSION['email'])){
     <div class="ps-page" id="dashboard">
         <nav class="ps-navigation--dashboard">
             <ul>
-                <li><a href="#">Dashboard</a></li>
+
+                <li><a href="">Dashboard</a></li>
                 <!--li><a href="#">Projects</a></li-->
                 <!--li class="active"><a href="#">Inbox</a></li-->
 
@@ -156,7 +159,9 @@ if(!isset($_SESSION['email'])){
     <script src="../../vendors/plugins/anime.min.js"></script>
     <script src="../../vendors/plugins/wow.min.js"></script>
     <script src="../../vendors/js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 </body>
 
-</html><?php
+</html>
