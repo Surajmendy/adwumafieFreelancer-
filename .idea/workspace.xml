@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da857940-61e2-45a8-8cb2-5819b0b007da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendors/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,24 +20,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/dashboard/chat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendors/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2805">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendors/fonts/athena/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1262">
@@ -47,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendors/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37268">
-              <caret line="11244" column="34" lean-forward="true" selection-start-line="11244" selection-start-column="34" selection-end-line="11244" selection-end-column="34" />
+            <state relative-caret-position="-4849">
+              <caret line="4673" column="3" lean-forward="true" selection-start-line="4673" selection-start-column="3" selection-end-line="4673" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -56,6 +40,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/portfolio_images/Screenshot (16).png">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -77,11 +70,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="680">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/submit_portfolio_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/upload_image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -97,6 +108,7 @@
       <find>ps-btn</find>
       <find>ps-footer</find>
       <find>.ps-navigation--dashboard ul &gt; li &gt; a</find>
+      <find>ps-block__thumbnail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,7 +127,6 @@
         <option value="$PROJECT_DIR$/controllers/logoutUser.php" />
         <option value="$PROJECT_DIR$/template_parts/sidebar.html" />
         <option value="$PROJECT_DIR$/user/header_footer/header_nav.php" />
-        <option value="$PROJECT_DIR$/vendors/css/style.css" />
         <option value="$PROJECT_DIR$/controllers/registerUser.php" />
         <option value="$PROJECT_DIR$/user/dashboard/client/sub_nav.php" />
         <option value="$PROJECT_DIR$/user/header_footer/footer.php" />
@@ -128,7 +139,6 @@
         <option value="$PROJECT_DIR$/user/dashboard/freelancer/upload.php" />
         <option value="$PROJECT_DIR$/classes/UploadFiles.php" />
         <option value="$PROJECT_DIR$/user/dashboard/freelancer/forms/drop_image_form.php" />
-        <option value="$PROJECT_DIR$/functions/functions.php" />
         <option value="$PROJECT_DIR$/controllers/submit_portfolio_controller.php" />
         <option value="$PROJECT_DIR$/controllers/upload_image.php" />
         <option value="$PROJECT_DIR$/user/register/index.php" />
@@ -144,7 +154,6 @@
         <option value="$PROJECT_DIR$/user/dashboard/freelancer/edit_profile.php" />
         <option value="$PROJECT_DIR$/user/dashboard/freelancer/find_clients.php" />
         <option value="$PROJECT_DIR$/user/dashboard/freelancer/index.php" />
-        <option value="$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php" />
         <option value="$PROJECT_DIR$/user/dashboard/client/edit_profile.php" />
         <option value="$PROJECT_DIR$/user/dashboard/client/find_freelancers.php" />
         <option value="$PROJECT_DIR$/user/dashboard/client/index.php" />
@@ -154,6 +163,9 @@
         <option value="$PROJECT_DIR$/user/dashboard/client/includes/dash_menu.html" />
         <option value="$PROJECT_DIR$/user/dashboard/freelancer/includes/dash_menu.html" />
         <option value="$PROJECT_DIR$/user/dashboard/chat.php" />
+        <option value="$PROJECT_DIR$/functions/functions.php" />
+        <option value="$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php" />
+        <option value="$PROJECT_DIR$/vendors/css/style.css" />
       </list>
     </option>
   </component>
@@ -174,6 +186,45 @@
             <path>
               <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="freelancer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,7 +282,7 @@
       <workItem from="1590968967809" duration="516000" />
       <workItem from="1590971707799" duration="1444000" />
       <workItem from="1590973566668" duration="59069000" />
-      <workItem from="1591082376632" duration="55877000" />
+      <workItem from="1591082376632" duration="59776000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1590975160053</created>
@@ -275,14 +326,22 @@
       <option name="project" value="LOCAL" />
       <updated>1591217777055</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed image preview error">
+      <created>1591222857049</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591222857050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165770000" />
+    <option name="totallyTimeSpent" value="169669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2761394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,8 +356,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.042313118" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" visible="true" weight="0.042432815" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.042432815" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -335,7 +394,8 @@
     <MESSAGE value="created add porfolio,portfolio,edit profile" />
     <MESSAGE value="created,edit profile page,profile page" />
     <MESSAGE value="updated database" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated database" />
+    <MESSAGE value="fixed image preview error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed image preview error" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/controllers/FreelancerOperations.php">
@@ -391,20 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="142" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/submit_portfolio_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/upload_image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -535,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/dashboard/client/find_freelancers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -636,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37268">
-          <caret line="11244" column="34" lean-forward="true" selection-start-line="11244" selection-start-column="34" selection-end-line="11244" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/portfolio_images/Screenshot (16).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -672,10 +704,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/submit_portfolio_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/upload_image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="680">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendors/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4849">
+          <caret line="4673" column="3" lean-forward="true" selection-start-line="4673" selection-start-column="3" selection-end-line="4673" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/dashboard/freelancer/portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>

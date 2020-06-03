@@ -4470,9 +4470,7 @@ textarea.form-control {
   background-color: #0CB905;
 }
 
-.ps-block--user-profile .ps-block__thumbnail .ps-block__thumbnail-edit:hover {
-  background-color: #6684f2;
-}
+
 
 .ps-block--user-profile > .ps-block__content {
   display: -webkit-box;

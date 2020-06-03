@@ -9,7 +9,7 @@ $username = $_SESSION['first_name'];
 $last_name = $_SESSION['last_name'];
 $role = $_SESSION['role'];
 
-
+//$base_url  = 'http://localhost/adwumafieWeb';
 $base_url  = 'https://adwumafie.knowghnews.com';
 if(!isset($_SESSION['email'])){
     echo "<script>window.location='../../login/'</script>";
@@ -94,7 +94,7 @@ if(!isset($_SESSION['email'])){
 
                                         ?>
 
-                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 ">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
                                             <div class="ps-block--service-3">
                                                 <div class="ps-block__thumbnail"><img src="<?php echo $url; ?>" alt=""></div>
                                                 <div class="ps-block__content"><a href="#"><?php echo $title; ?></a>
