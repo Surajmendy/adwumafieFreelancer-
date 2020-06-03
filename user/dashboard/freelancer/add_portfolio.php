@@ -26,7 +26,7 @@ if(!isset($_SESSION['email'])){
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../../vendors/img/favicon.png"/>
 
 
     <title> dashboard</title>
@@ -55,12 +55,12 @@ if(!isset($_SESSION['email'])){
 <body>
 
 
-<?php include '../../../template_parts/dash_menu.html' ?>
+<?php include 'includes/dash_menu.html' ?>
 
 
   
    <div class="ps-page" id="dashboard">
-       <?php include 'freelancer_navbar.php'?>
+       <?php include 'includes/freelancer_navbar.php'?>
 
       <div class="ps-dashboard ps-section--sidebar">
         <div class="container">

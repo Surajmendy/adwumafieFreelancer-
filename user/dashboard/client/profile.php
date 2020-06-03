@@ -9,6 +9,9 @@ require_once '../../../functions/functions.php';
 $user_id = $_SESSION['id'];
 $user_email = $_SESSION['email'];
 $username = $_SESSION['first_name'];
+$last_name = $_SESSION['last_name'];
+$role = $_SESSION['role'];
+
 if(!isset($_SESSION['email'])){
     echo "<script>window.location='../../login/'</script>";
 }else{
@@ -26,7 +29,7 @@ if(!isset($_SESSION['email'])){
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../../vendors/img/favicon.png"/>
 
 
     <title> dashboard</title>
@@ -58,38 +61,117 @@ if(!isset($_SESSION['email'])){
 <?php include 'includes/dash_menu.html' ?>
 
 
-
 <div class="ps-page" id="dashboard">
-    <?php include 'includes/sub_nav.php ' ?>
+    <?php include 'includes/sub_nav.php'?>
 
-    <div class="ps-dashboard ps-section--sidebar">
+
+
+
+
+    <div class="section ps-section pt-50">
         <div class="container">
-            <div class="ps-section__container">
-                <div class="ps-section__content" >
-
-
-                   <?php
-                    $profile_query = mysqli_query($con,"SELECT * FROM profile WHERE user_id = '$user_id'");
-                    if($profile_query){
-                        $num_profile = mysqli_num_rows($profile_query);
-                        if($num_profile > 0){
-
-                        }
-                    }
-                   ?>
-
-
-
-                </div>
-
-
-
-
-
-
+            <div class="jumbotron mb-50">
+                <div class="text-center mb-30"><img src="../../../vendors/img/users/user.png"  width="100px" height="100px" alt=""></div>
+                <h3 class="ps-heading--2 text-center"> <span class="ps-highlight"></span></h3>
             </div>
+
+
+
+
+            <?php
+            $profile_query = mysqli_query($con,"SELECT * FROM profile WHERE user_id = '$user_id'");
+            if($profile_query){
+                //continue to fetch data
+                $num_profile = mysqli_num_rows($profile_query);
+                if($num_profile > 0){
+                    //user has a profile
+
+                    $user_info = mysqli_fetch_array($profile_query);
+                    $bio = $user_info['biography'];
+                    $phone = $user_info['phone_number'];
+                    $country = $user_info['country'];
+                    $city = $user_info['city'];
+                    $address = $user_info['address'];
+                    ?>
+
+
+                    <div class="card mb-100">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl-6 col-sm-12 mb-50">
+                                    <h5 class="card-title ps-heading--2 mb-20 text-capitalize"><span class="ps-highlight">Biography</span></h5>
+                                    <p></p>
+
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><?php echo $bio; ?></li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="col-xl-6 col-sm-12 mb-50">
+                                    <h5 class="card-title ps-heading--2 mb-20 text-capitalize"><span class="ps-highlight">Personal Details</span></h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Address: <?php echo $address; ?></li>
+                                        <li class="list-group-item">City: <?php echo $city; ?></li>
+                                        <li class="list-group-item">Country: <?php echo $country; ?></li>
+                                        <li class="list-group-item">Phone Number: <?php echo $phone; ?></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-xl-6 col-sm-12 mb-50">
+                                    <h5 class="card-title ps-heading--2 mb-20 text-capitalize"><span class="ps-highlight">Account Information</span></h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">First Name: <?php echo $username; ?></li>
+                                        <li class="list-group-item">Last Name: <?php echo $last_name; ?></li>
+                                        <li class="list-group-item">Email Address: <?php echo $user_email; ?></li>
+                                        <li class="list-group-item">Role: <?php echo $role; ?></li>
+
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+
+
+
+                }else{
+
+                    ?>
+
+                    <div class="text-center" style="margin: 50px">
+
+                        <h4 style="">Your Profile seems to be empty click the button below to add more information
+                        </h4>
+
+                        <a style="margin: auto;
+" href="edit_profile.php"> <button class="btn-primary ps-btn">Add</button> </a>
+
+                    </div>
+
+                    <?php
+                    //let user creat
+                }
+
+
+            }else{
+                echo 'no query';
+            }
+            ?>
+
+
+
+
+
+            <footer></footer>
         </div>
     </div>
+
 </div>
 
 

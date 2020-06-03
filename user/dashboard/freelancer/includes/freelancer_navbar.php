@@ -1,6 +1,6 @@
 <nav class="ps-navigation--dashboard">
     <ul>
-        <li class="active"><a href="#">Dashboard</a></li>
+        <li class="active"><a href="index.php">Dashboard</a></li>
         <!--li><a href="#">Projects</a></li-->
         <!--li><a href="#">Inbox</a></li-->
 

@@ -9,7 +9,7 @@ require_once '../../../functions/functions.php';
 $user_id = $_SESSION['id'];
 $user_email = $_SESSION['email'];
 $username = $_SESSION['first_name'];
-$lastname = $_SESSION['last_name'];
+$last_name = $_SESSION['last_name'];
 if(!isset($_SESSION['email'])){
     echo "<script>window.location='../../login/'</script>";
 }else{
@@ -27,7 +27,7 @@ if(!isset($_SESSION['email'])){
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../../vendors/img/favicon.png"/>
 
 
     <title> dashboard</title>
@@ -56,12 +56,12 @@ if(!isset($_SESSION['email'])){
 <body>
 
 
-<?php include '../../../template_parts/dash_menu.html' ?>
+<?php include 'includes/dash_menu.html' ?>
 
 
 
 <div class="ps-page" id="dashboard">
-    <?php include 'freelancer_navbar.php' ?>
+    <?php include 'includes/freelancer_navbar.php'?>
 
     <div class="ps-dashboard ps-section--sidebar">
         <div class="container">
@@ -86,7 +86,7 @@ if(!isset($_SESSION['email'])){
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                                     <div class="form-group">
                                         <label>Last Name</label>
-                                        <input class="form-control" type="text" placeholder="<?php echo $lastname; ?>" disabled>
+                                        <input class="form-control" type="text" placeholder="<?php echo $last_name; ?>" disabled>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
