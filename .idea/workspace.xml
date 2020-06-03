@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da857940-61e2-45a8-8cb2-5819b0b007da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/dashboard/chat_old.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adwumafieweb_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/adwumafieweb_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/dashboard/chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/dashboard/chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/dashboard/freelancer/includes/dash_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/dashboard/freelancer/includes/dash_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/img/icons/home-1/process-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/img/icons/home-1/process-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/img/icons/home-1/process-3.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,15 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/dashboard/client/edit_profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/dashboard/chat.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,34 +58,30 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/portfolio_images/p1.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/dashboard/chat_old.php">
+        <entry file="file://$PROJECT_DIR$/template_parts/head.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template_parts/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+            <state relative-caret-position="425">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/dashboard/freelancer/includes/dash_menu.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/dashboard/client/includes/dash_menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="84" column="14" lean-forward="true" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+            <state relative-caret-position="472">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
             </state>
           </provider>
         </entry>
@@ -195,109 +175,6 @@
               <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="alerts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="template_parts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="freelancer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="freelancer" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adwumafieWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adwumafieWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -354,7 +231,7 @@
       <workItem from="1590968967809" duration="516000" />
       <workItem from="1590971707799" duration="1444000" />
       <workItem from="1590973566668" duration="59069000" />
-      <workItem from="1591082376632" duration="55603000" />
+      <workItem from="1591082376632" duration="55877000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1590975160053</created>
@@ -391,11 +268,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591212299822</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated database">
+      <created>1591217777053</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591217777055</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165496000" />
+    <option name="totallyTimeSpent" value="165770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -450,33 +334,10 @@
     <MESSAGE value="updated UI" />
     <MESSAGE value="created add porfolio,portfolio,edit profile" />
     <MESSAGE value="created,edit profile page,profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="created,edit profile page,profile page" />
+    <MESSAGE value="updated database" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated database" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user/header_footer/header_nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/header_footer/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_parts/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/dashboard/freelancer/Freelancer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/FreelancerOperations.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -502,13 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -724,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template_parts/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/dashboard/client/includes/dash_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -801,6 +648,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/portfolio_images/p1.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_parts/js.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_parts/head.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_parts/view_job_sidebar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_parts/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template_parts/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
