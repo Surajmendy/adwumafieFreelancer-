@@ -80,13 +80,6 @@ if(!isset($_SESSION['email'])){
             <div class="container">
                 <div class="ps-section__container">
                     <div class="ps-section__content">
-
-
-
-
-
-
-
                         <div align="right">
                             <?php
                             $chat_query = mysqli_query($con,"SELECT * FROM message WHERE sender_id = '$user_id' AND receiver_id = '$receiver_id' ");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2020 at 12:52 PM
+-- Generation Time: Jun 03, 2020 at 10:44 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -201,7 +201,9 @@ INSERT INTO `message` (`id`, `sender_id`, `receiver_id`, `text`, `created`) VALU
 (15, 31, 29, 'yh', '2020-05-31 21:19:47'),
 (16, 29, 31, 'hy', '2020-06-01 01:52:06'),
 (17, 29, 31, 'hy', '2020-06-01 01:52:26'),
-(18, 29, 31, 'helooo', '2020-06-01 01:52:36');
+(18, 29, 31, 'helooo', '2020-06-01 01:52:36'),
+(19, 30, 31, 'hello boss', '2020-06-02 07:17:59'),
+(20, 30, 31, '', '2020-06-02 10:03:55');
 
 -- --------------------------------------------------------
 
@@ -214,7 +216,7 @@ CREATE TABLE `portfolio` (
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `link` varchar(255) NOT NULL,
-  `image` varchar(255) DEFAULT NULL,
+  `image` varchar(255) NOT NULL DEFAULT '0',
   `created` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -224,8 +226,31 @@ CREATE TABLE `portfolio` (
 --
 
 INSERT INTO `portfolio` (`id`, `title`, `description`, `link`, `image`, `created`, `user_id`) VALUES
-(1, 'kljfjsdjfkljsd', 'dslkjflkjskjf', 'sdlfjdskjflkjkds', NULL, '2020-06-01 05:24:12', 0),
-(2, 'lsjfslfjdsf', 'sd;fkd;skflksd;lkf', 'dfs;f;sdkf;lkfs;lk', NULL, '2020-06-01 05:25:47', 29);
+(18, 'mfmsdjhdjsf', 'dfjskfhkjdhfkhdf', 'fjksdhfjdjgfjgf', '../user/dashboard/freelancer/portfolio_images/Screenshot (20).png', '2020-06-02 22:09:22', 30),
+(19, 'kkjkdfdskhfkdf', 'dfkdsifdfh', 'hsjhfjdsfhjdf', '../user/dashboard/freelancer/portfolio_images/Screenshot (53).png', '2020-06-02 22:26:36', 36),
+(20, 'jkhkhsdjkhsajdsakdhkjhds', 'sdjkahsjdkhjshajdh', 'sadjhjjshajdhjhsd', '../user/dashboard/freelancer/portfolio_images/raf.jpg', '2020-06-03 11:06:00', 38);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `portfolio_images`
+--
+
+CREATE TABLE `portfolio_images` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `created` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `portfolio_images`
+--
+
+INSERT INTO `portfolio_images` (`id`, `user_id`, `image`, `created`) VALUES
+(1, 30, 'portfolio_images/Screenshot (16).png', '2020-06-02 20:05:28'),
+(2, 30, '../user/dashboard/freelancer/portfolio_images/Screenshot (13).png', '2020-06-02 20:17:01'),
+(3, 30, '../user/dashboard/freelancer/portfolio_images/Screenshot (12).png', '2020-06-02 20:32:52');
 
 -- --------------------------------------------------------
 
@@ -237,38 +262,22 @@ CREATE TABLE `profile` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `biography` text DEFAULT NULL,
-  `linkedin` varchar(255) DEFAULT NULL,
-  `location` varchar(255) DEFAULT NULL
+  `phone_number` varchar(20) DEFAULT NULL,
+  `country` varchar(50) DEFAULT NULL,
+  `city` varchar(50) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `profile_photo` varchar(100) DEFAULT NULL,
+  `cover_photo` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `profile`
 --
 
-INSERT INTO `profile` (`id`, `user_id`, `biography`, `linkedin`, `location`) VALUES
-(11, 15, 'kljlj;kljljfd', '', 'Ghana'),
-(12, 18, 'hjkfhkjhfkjhsjf', 'hjhjfh', 'yueyuyruyr'),
-(13, 23, 'fdskhflkshfh', 'hjjksjdgjg', 'fdksfkf');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `schema_version`
---
-
-CREATE TABLE `schema_version` (
-  `version_rank` int(11) NOT NULL,
-  `installed_rank` int(11) NOT NULL,
-  `version` varchar(50) NOT NULL,
-  `description` varchar(200) NOT NULL,
-  `type` varchar(20) NOT NULL,
-  `script` varchar(1000) NOT NULL,
-  `checksum` int(11) DEFAULT NULL,
-  `installed_by` varchar(100) NOT NULL,
-  `installed_on` timestamp NOT NULL DEFAULT current_timestamp(),
-  `execution_time` int(11) NOT NULL,
-  `success` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `profile` (`id`, `user_id`, `biography`, `phone_number`, `country`, `city`, `address`, `profile_photo`, `cover_photo`) VALUES
+(15, 31, 'I am a', '9728374', 'Ghanan', 'Kumasi', '4878747 32434', NULL, NULL),
+(16, 29, 'Traffic is the LIFEBLOOD for every business.\r\n\r\nSure, organic and inbound traffic is great if you can get them consistently.\r\n\r\nBut no business will thrive or survive if they do not do paid traffic.\r\n\r\nDon\'t believe me? Try growing a real business without advertising...\r\n\r\nIt probably won\'t work.\r\n\r\nThat\'s why traffic is wh', '0544646116', 'Ghana', 'Kumasi', 'P O BOX 217', NULL, NULL),
+(17, 32, 'We buy advertising in BULK and we get clicks for cheaper.. way cheaper than most traffic sources.\r\n\r\nSince the traffic is targeted to 5 major audiences we are able to get 20 to 50 people on board to pay for it at a cheaper rate.\r\n\r\nBOOM! We just saved them 50% less than they would\'ve paid going alone.\r\n\r\nThis is the power of Advertising Co-ops.\r\n\r\nHere\'s where you can team up with and get quality traffic... up to 600 clicks per week for way less money.', '01234589696', 'USA', 'ILLINOIS', 'KS 45096 KITSON', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -299,7 +308,10 @@ INSERT INTO `users` (`id`, `email`, `first_name`, `last_name`, `password`, `crea
 (32, 'test4@gmail.com', 'test', 'four', '$2y$10$XTX2gflgFeUiAoslJYeHDOgOCKn4nUWip2SUiZDvwCi08xlgKfIrW', '2020-05-31 10:13:43', 'client', '200655', 0),
 (33, 'test5@gmail.com', 'test', 'five', '$2y$10$YlkOp4Fpv406tuOD//U9DuJF8RzvTmQ5WH2QOD/xa3b9icZQmOJUK', '2020-05-31 10:19:53', 'client', '190185', 0),
 (34, 'test6@gmail.com', 'test6', 'Six', '$2y$10$W/V9kp6qS/KKvqEe4P4gNOa9.06lKG5Xstoq85.g/OSzYWdfXbLIy', '2020-06-01 09:27:06', 'client', '50405', 0),
-(35, 'test7@gmail.com', 'test7', 'seven', '$2y$10$YDNymjMt.pherbYm4pMSseYRNxBFoN8agaT2XuNz2gCo3szVyXKGq', '2020-06-01 09:33:01', 'freelancer', '220085', 0);
+(35, 'test7@gmail.com', 'test7', 'seven', '$2y$10$YDNymjMt.pherbYm4pMSseYRNxBFoN8agaT2XuNz2gCo3szVyXKGq', '2020-06-01 09:33:01', 'freelancer', '220085', 0),
+(36, 'test10@gmail.com', 'test10', 'ten', '$2y$10$M05KwO2ratdKGgZ.TO6q0eeXlifCCw./x8HZZwHgpTDlMOEAJSnzq', '2020-06-02 22:24:29', 'freelancer', '270755', 0),
+(37, 'test11@gmail.com', 'test11', 'eleven', '$2y$10$VRY1owOL8XzX9Y7c6P5Jeezs4OxSI3upyt67DkCBM641cnqWSvpsm', '2020-06-03 02:30:37', '', '235695', 0),
+(38, 'test12@gmail.com', 'test12', 'Twelve', '$2y$10$IzHJdrRnQIn6K/J.tH6PzO66b1zRKfz1x.y6LlNATRNQor1LfGaiW', '2020-06-03 06:31:36', 'freelancer', '146405', 0);
 
 --
 -- Indexes for dumped tables
@@ -369,20 +381,17 @@ ALTER TABLE `portfolio`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `portfolio_images`
+--
+ALTER TABLE `portfolio_images`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `profile`
 --
 ALTER TABLE `profile`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
-
---
--- Indexes for table `schema_version`
---
-ALTER TABLE `schema_version`
-  ADD PRIMARY KEY (`version`),
-  ADD KEY `schema_version_vr_idx` (`version_rank`),
-  ADD KEY `schema_version_ir_idx` (`installed_rank`),
-  ADD KEY `schema_version_s_idx` (`success`);
 
 --
 -- Indexes for table `users`
@@ -440,25 +449,31 @@ ALTER TABLE `job2`
 -- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `portfolio_images`
+--
+ALTER TABLE `portfolio_images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `profile`
 --
 ALTER TABLE `profile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- Constraints for dumped tables
