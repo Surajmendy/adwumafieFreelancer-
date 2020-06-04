@@ -3,7 +3,7 @@
                 <div class="ps-block--user">
                   <div class="ps-block__thumbnail"><img src="../../../vendors/img/users/user.png" alt=""/></div>
                   <div class="ps-block__content">
-                    <p><strong>Wellcome back</strong></p>
+                    <p>Welcome back</p>
                     <?php if($role=="client") { ?>
                         <h4> <?php echo $username; ?> </h4><a href="profile.php">View your profile<i class="fa fa-caret-right"></i></a>
 

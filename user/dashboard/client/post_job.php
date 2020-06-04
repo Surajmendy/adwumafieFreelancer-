@@ -31,7 +31,7 @@ if(!isset($_SESSION['email'])){
     <link rel="shortcut icon" type="image/png" href="../../../vendors/img/favicon.png"/>
 
 
-    <title> dashboard</title>
+    <title>Adwumafie | Post Job</title>
 
 
 

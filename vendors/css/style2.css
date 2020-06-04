@@ -161,3 +161,30 @@
 .ps-form--settings{
     max-width: 700px;
 }
+.panel {
+    max-width: 800px;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+#read-message-box{
+    max-width: 800px;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.ps-highlight {
+    color: #4EC862;
+    font-weight: 600;
+}
+
+.ps-block--user .ps-block__content h4{
+    color: #4EC862;
+}
+.ps-block--people .ps-block__title{
+    color: #02353C;
+}
+.header.header--sticky{
+   background-color: #02353C;
+}
+

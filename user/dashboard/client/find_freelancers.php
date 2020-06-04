@@ -99,7 +99,7 @@ if(!isset($_SESSION['email'])){
                                                         <br/></strong></p>
                                                 <div class="ps-block__footer">
 
-                                                    <a class="ps-btn ps-btn--sm" href="../chat.php?user=<?php echo $client_id ?>">Chat</a>
+                                                    <a class="ps-btn ps-btn--sm" href="send_message.php?user=<?php echo $client_id ?>">Send Message</a>
 
 
                                                 </div>

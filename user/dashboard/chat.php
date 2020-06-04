@@ -85,8 +85,6 @@ if(!isset($_SESSION['email'])){
 
 
 
-
-
                         <div align="right">
                             <?php
                             $chat_query = mysqli_query($con,"SELECT * FROM message WHERE sender_id = '$user_id' AND receiver_id = '$receiver_id' ");
@@ -137,6 +135,44 @@ if(!isset($_SESSION['email'])){
                         </form>
 
 
+                    </div>
+
+
+
+
+
+                    <div class="table-responsive-lg">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
 
 

@@ -1201,10 +1201,6 @@ figure {
   }
 }
 
-.ps-highlight {
-  color: #6684f2;
-  font-weight: 600;
-}
 
 [class^="athena-"]:before, [class*=" athena-"]:before {
   color: inherit;
